@@ -9,14 +9,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
 
-### Bloco 1: [Introdução - Unix & Shell](https://github.com/fernandamichetti/trybe-exercicios/tree/master/modulo-01-fundamentos/bloco01-unix-e-bash)
+### Bloco 1: Introdução - Unix & Shell 
 
 :ballot_box_with_check: 1-3: _Unix & Shell- Part 1_
 
 :ballot_box_with_check: 1-4: _Unix & Shell- Part 2_
 
 
-### Bloco 2: [Git & GitHub](https://github.com/fernandamichetti/trybe-exercicios/tree/master/modulo-01-fundamentos/bloco02-git-github-internet)
+### Bloco 2: Git & GitHub
 
 :ballot_box_with_check: 2-1: _O que é e para que serve?_
 
@@ -440,7 +440,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
  # English version - Trybe
 
 
- This repository contains all activities that are being developed by  _[Maria Fernanda Michetti](https://www.linkedin.com/in/mariafernandamichetti/)_  while studying at  [Trybe](https://www.betrybe.com/)  🚀 (2020 - 2021).
+ This repository contains all activities that are being developed by  _[Thiago Ramos de Lima](https://www.linkedin.com/in/thiago-ramos-lima-4ba8aa15a/)_  while studying at  [Trybe](https://www.betrybe.com/)  🚀 (2020 - 2021).
 
 The web development training program from Trybe has a workload of  **1500 hours**  that covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
 
@@ -449,14 +449,14 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 ## Web development fundamentals :hourglass_flowing_sand:
 
 
-### Part 1: [Introduction - Unix & Shell](https://github.com/fernandamichetti/trybe-exercicios/tree/master/modulo-01-fundamentos/bloco01-unix-e-bash)
+### Part 1: Introduction - Unix & Shell
 
 :ballot_box_with_check: 1-3: _Unix & Shell- Part 1_
 
 :ballot_box_with_check: 1-4: _Unix & Shell- Part 2_
 
 
-### Part 2: [Git & GitHub](https://github.com/fernandamichetti/trybe-exercicios/tree/master/modulo-01-fundamentos/bloco02-git-github-internet)
+### Part 2: Git & GitHub
 
 :ballot_box_with_check: 2-1: _What is it and what is it used for?_
 
