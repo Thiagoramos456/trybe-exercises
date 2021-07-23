@@ -1,0 +1,8 @@
+li{
+    background-color: yellow;
+}
+
+li:nth-of-type(2n){
+    background-color: green;
+}
+
