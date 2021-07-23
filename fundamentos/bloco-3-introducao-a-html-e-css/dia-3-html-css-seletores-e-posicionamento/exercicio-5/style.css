@@ -7,14 +7,24 @@ li em {
     font-weight: 700;
 }
 
+ul.linguagens li:nth-child(-n+3){
+    color: blue;
+}
+
 li:nth-of-type(2n){
     background-color: green;
 }
 
-h1, h3{
+.java{
+    background-color: pink !important;
+}
+
+h1, h2 em{
     color: red;
 }
 
-h1 em{
+h1 em, h2 em{
     font-size: 40px;
+    border:1px solid black;
 }
+
