@@ -1,5 +1,10 @@
 li{
     background-color: yellow;
+    font-size: 20px;
+}
+
+li em {
+    font-weight: 700;
 }
 
 li:nth-of-type(2n){
