@@ -6,3 +6,10 @@ li:nth-of-type(2n){
     background-color: green;
 }
 
+h1, h3{
+    color: red;
+}
+
+h1 em{
+    font-size: 40px;
+}
