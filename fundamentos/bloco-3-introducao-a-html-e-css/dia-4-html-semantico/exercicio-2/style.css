@@ -7,30 +7,46 @@
 
 body{
     font-family: 'BioRhyme', serif;;
-    color: #4c4c4c;
+    color: #EE964B;
+    background-color: #082A49;
+    
+}
+
+header{
+    background-color: #2E2F2F;
+
+
 }
 
 header h1{
-    font-size: 25px;
-    background-color: #94c455;
-    padding: 18px;
-    margin-left: auto;
-}
-
-nav{
-    background-color: #da9846;
-    padding: 18px;
-}
-nav li{
+    color:#EE964B;
+    
     display: inline-block;
-    margin: 0 15px ;
+    font-size: 25px;
+    padding: 18px;
 }
 
-nav li a{
+header nav{
+    float: right;
+    margin: 25px 50px;
+}
+
+header nav li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav li a{
+    color: #94C455;
     text-decoration: none;
-    color:#4c4c4c;
-    background-color: #cd5b5f;
+    font-weight: 600;
     border-radius: 10%;
     padding: 10px 20px;
     cursor: pointer;
+    transition: color 0.3s;
+}
+
+header nav li a:hover{
+    text-decoration: underline;
+    color:#EE964B;
 }
