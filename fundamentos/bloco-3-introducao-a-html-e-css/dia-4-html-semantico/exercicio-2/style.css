@@ -48,6 +48,10 @@ header nav li a:hover {
   color: #ee964b;
 }
 
+.general{
+    margin-bottom: 60px;
+}
+
 .general-text {
   display: block;
   margin: auto;
@@ -90,6 +94,21 @@ tr {
 }
 
 .fact-1, .fact-2{
-    width: 60%;
     margin: 0 10%;
+}
+
+.facts{
+    display: inline-block;
+    width: 60%;
+}
+
+.lateral{
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    margin-top: 40px;
+}
+
+.lateral-content{
+    text-align: justify;
 }
