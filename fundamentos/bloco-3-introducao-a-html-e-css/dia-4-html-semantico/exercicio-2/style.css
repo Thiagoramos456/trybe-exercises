@@ -78,3 +78,18 @@ tr {
   border: 3px solid #004643;
   padding: 15px;
 }
+
+.fact-title{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.fact-p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.fact-1, .fact-2{
+    width: 60%;
+    margin: 0 10%;
+}
