@@ -17,7 +17,6 @@ header {
 
 header h1 {
   color: #ee964b;
-
   display: inline-block;
   font-size: 25px;
   padding: 18px;
@@ -48,8 +47,8 @@ header nav li a:hover {
   color: #ee964b;
 }
 
-.general{
-    margin-bottom: 60px;
+.general {
+  margin-bottom: 60px;
 }
 
 .general-text {
@@ -83,32 +82,65 @@ tr {
   padding: 15px;
 }
 
-.fact-title{
-    font-size: 30px;
-    margin-top: 50px;
+.fact-title {
+  font-size: 30px;
+  margin-top: 50px;
 }
 
-.fact-p{
-    font-size: 15px;
-    text-align: justify;
+.fact-p {
+  font-size: 15px;
+  text-align: justify;
 }
 
-.fact-1, .fact-2{
-    margin: 0 10%;
+.fact-1,
+.fact-2 {
+  margin: 0 10%;
 }
 
-.facts{
-    display: inline-block;
-    width: 60%;
+.facts {
+  display: inline-block;
+  width: 60%;
 }
 
-.lateral{
-    display: inline-block;
-    vertical-align: top;
-    width: 400px;
-    margin-top: 40px;
+.lateral {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  margin-top: 40px;
 }
 
-.lateral-content{
-    text-align: justify;
+.lateral-content {
+  text-align: justify;
+}
+
+.lateral-content h1 {
+  margin-top: 17px;
+}
+
+.lateral-content p{
+  font-size: 15px;
+}
+
+footer{
+  background-color: #004643;
+  margin-top: 50px
+}
+
+footer h1{
+  font-size: 20px;
+  display: inline-block;
+  padding: 20px;
+}
+
+footer img{
+  width: 30px;  
+}
+
+.footer-imgs{
+  display: inline-block;
+}
+
+footer li{
+  display: inline;
+  margin: 0 5px;
 }
