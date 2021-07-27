@@ -1,52 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: 'BioRhyme', serif;;
-    color: #EE964B;
-    background-color: #082A49;
-    
+body {
+  font-family: "BioRhyme", serif;
+  color: #ee964b;
+  background-color: #082a49;
 }
 
-header{
-    background-color: #2E2F2F;
-
-
+header {
+  background-color: #2e2f2f;
 }
 
-header h1{
-    color:#EE964B;
-    
-    display: inline-block;
-    font-size: 25px;
-    padding: 18px;
+header h1 {
+  color: #ee964b;
+
+  display: inline-block;
+  font-size: 25px;
+  padding: 18px;
 }
 
-header nav{
-    float: right;
-    margin: 25px 50px;
+header nav {
+  float: right;
+  margin: 25px 50px;
 }
 
-header nav li{
-    display: inline-block;
-    margin: 0 15px;
+header nav li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
-header nav li a{
-    color: #94C455;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 10%;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: color 0.3s;
+header nav li a {
+  color: #94c455;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10%;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
-header nav li a:hover{
-    text-decoration: underline;
-    color:#EE964B;
+header nav li a:hover {
+  text-decoration: underline;
+  color: #ee964b;
+}
+
+.general-text {
+  display: block;
+  margin: auto;
+  color: #94c455;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.general-text h1 {
+  font-size: 40px;
+}
+
+#stomatopoda-img {
+  border-radius: 45%;
+  display: block;
+  margin: 50px auto;
+  box-shadow: 1px 1px 10px #fff;
+}
+
+table {
+  margin: auto;
+  border-radius: 5%;
+}
+
+table,
+td,
+tr {
+  border: 3px solid #004643;
+  padding: 15px;
 }
