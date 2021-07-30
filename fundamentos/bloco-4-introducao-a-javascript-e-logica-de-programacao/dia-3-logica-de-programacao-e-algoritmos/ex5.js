@@ -15,7 +15,7 @@ for (let andar = 1; andar <= n; andar += 2){
     let construcaoAndar = "";
     let quantidadeEspacos = n - quantidadeTotal;
     for (let posicao = 1; posicao <= quantidadeTotal; posicao ++){
-        if(andar !== n){
+        if(quantidadeTotal !== n){
             if (posicao <= quantidadeEspacos){
                 construcaoAndar += " ";
             }
