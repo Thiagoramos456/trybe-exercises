@@ -5,3 +5,9 @@ function verificaPalindromo(string){
     return string === stringReversa;
 }
 
+// 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+function maiorIndice(array){
+
+    return array.length - 1;
+}
