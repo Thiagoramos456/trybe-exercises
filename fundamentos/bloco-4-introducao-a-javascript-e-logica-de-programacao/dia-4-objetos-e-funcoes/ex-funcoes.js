@@ -45,4 +45,27 @@ function maisCaracteres(nomes){
     return maiorNome;
 }
 
-console.log(maisCaracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
+// 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
+function inteiroMaisRepetente(numeros){
+    let quantidades = {};
+    let maisRepetente = 0;
+    let frequencia = 0;
+    for (numero of numeros){
+        if (quantidades[numero] === undefined){
+            quantidades[numero] = 1;
+        }
+        else{
+            quantidades[numero] += 1;
+        }
+    }
+    for (numero in quantidades){
+        if (quantidades[numero] > frequencia){
+            frequencia = quantidades[numero];
+            maisRepetente = numero;
+        }
+    }
+
+    return maisRepetente;
+}
+
