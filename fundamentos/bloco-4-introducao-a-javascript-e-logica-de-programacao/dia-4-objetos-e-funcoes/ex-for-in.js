@@ -32,5 +32,8 @@ let info2 = {
 }
 
 for (propriedade in info){
+    if(info[propriedade] === info2[propriedade]){
+        console.log("Ambos", propriedade + 's!')
+    }
     console.log(info[propriedade], "e", info2[propriedade]);
 }
