@@ -18,4 +18,15 @@ function indiceMaiorValor(array){
     return maior;
 }
 
-console.log(indiceMaiorValor([2, 3, 6, 7, 10, 1]));
+// 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+function indiceMenorValor(array){
+    let menor = array[0];
+
+    for (number in array){
+        if(array[number] < array[menor]){
+            menor = number;
+        }
+    }
+    return menor
+}
