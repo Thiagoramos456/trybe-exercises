@@ -7,7 +7,15 @@ function verificaPalindromo(string){
 
 // 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 
-function maiorIndice(array){
+function indiceMaiorValor(array){
+    let maior = 0;
 
-    return array.length - 1;
+    for (number in array){
+        if(array[number] > maior){
+            maior = number;
+        }
+    }
+    return maior;
 }
+
+console.log(indiceMaiorValor([2, 3, 6, 7, 10, 1]));
