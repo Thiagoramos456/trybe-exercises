@@ -52,7 +52,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
   
 ### Bloco 5: Javascript: DOM, Eventos e Web Storage
 
-:black_large_square: 5-1: _JavaScript - DOM e seletores_
+:ballot_box_with_check: 5-1: _JavaScript - DOM e seletores_
 
 :black_large_square: 5-2: _JavaScript - Trabalhando com elementos_
 
@@ -493,7 +493,7 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 ### Part 5: Javascript: DOM, Events e Web Storage
 
-:black_large_square: 5-1: _JavaScript - DOM and selectors_
+:ballot_box_with_check: 5-1: _JavaScript - DOM and selectors_
 
 :black_large_square: 5-2: _JavaScript - Working with elements_
 
