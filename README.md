@@ -45,9 +45,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 :ballot_box_with_check: 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 
-:black_large_square: 4-4: _JavaScript - Objetos e funções_
+:ballot_box_with_check: 4-4: _JavaScript - Objetos e funções_
 
-:black_large_square: 4-5: _Projeto - Playground Functions_
+:ballot_box_with_check: 4-5: _Projeto - Playground Functions_
 
   
 ### Bloco 5: Javascript: DOM, Eventos e Web Storage
@@ -486,9 +486,9 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check: 4-3: _JavaScript - Programming Logic and Algorithms_
 
-:black_large_square: 4-4: _JavaScript - Objects and functions_
+:ballot_box_with_check: 4-4: _JavaScript - Objects and functions_
 
-:black_large_square: 4-5: _Project - Playground Functions_
+:ballot_box_with_check: 4-5: _Project - Playground Functions_
 
 
 ### Part 5: Javascript: DOM, Events e Web Storage
@@ -872,5 +872,3 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 :black_large_square: 38-3: _Stacks_
 
 :black_large_square: 38-4: _Project: TING - Trybe Is Not Google_
-
-
