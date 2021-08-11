@@ -1,5 +1,6 @@
-let btnHolidays = document.getElementById("btn-holidays")
+let btnHolidays = document.getElementById("btn-holidays");
 let toggleHoliday = false;
+let toggleFriday = false;
 
 function createDaysOfTheWeek() {
   const weekDays = [
@@ -57,6 +58,15 @@ function holidayShow() {
     toggleHoliday = !toggleHoliday;
 }
 
+function addFridayButton(name) {
+    let button = document.createElement("button");
+    button.id = "btn-friday";
+    button.innerText = name;
+    let div = document.querySelector(".input-container");
+    div.appendChild(button);
+}
+
+addFridayButton("Sexta-Feira");
 createDaysOfTheWeek();
 createDaysOfTheMonth();
 btnHolidays.addEventListener("click", holidayShow);
