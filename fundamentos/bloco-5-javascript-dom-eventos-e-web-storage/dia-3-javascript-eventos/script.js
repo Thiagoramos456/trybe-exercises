@@ -30,12 +30,14 @@ function createDaysOfTheMonth() {
       let listItem = document.createElement("li");
       listItem.classList.add("day");
       listItem.innerText = day;
+      listItem.style.transition = "0.2s";
+      listItem.addEventListener("mouseover", zoomIn);
+      listItem.addEventListener("mouseleave", zoomOut);
 
       if (day == 24 || day == 25 || day == 31){
         listItem.classList.add("holiday");
       }
       if (day == 4 || day == 11 || day == 18 || day == 25){
-        console.log(day);
         listItem.classList.add("friday");
         listItem.value = day;
       }
@@ -80,7 +82,32 @@ function fridayShow() {
 
 }
 
+function zoomIn(event) {
+    let element = event.target;
+    if (element.classList.contains("day")){
+        element.style.fontSize = "30px";
+        element.style.color = "red";
+    }
+}
+
+function zoomOut(event) {
+    let element = event.target;
+    if (element.classList.contains("day")){
+        element.style.fontSize = "20px";
+        element.style.color = "#777";
+    }
+}
+// function addTask() {
+//     let inputText = document.getElementById("task-input").value;
+//     let tasks = document.querySelector(".my-tasks");
+//     let actualTask = document.createElement("span");
+
+//     actualTask.innerText = inputText;
+//     tasks.appendChild(actualTask);
+// } 
+
 let btnHolidays = document.getElementById("btn-holidays");
+let btnAdd = document.getElementById("btn-add");
 let toggleHoliday = false;
 let toggleFriday = false;
 
@@ -92,3 +119,4 @@ createDaysOfTheWeek();
 createDaysOfTheMonth();
 btnHolidays.addEventListener("click", holidayShow);
 btnFridays.addEventListener("click", fridayShow);
+// btnAdd.addEventListener("click", addTask);
