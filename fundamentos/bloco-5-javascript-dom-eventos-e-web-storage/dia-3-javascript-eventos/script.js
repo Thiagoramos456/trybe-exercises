@@ -97,14 +97,14 @@ function zoomOut(event) {
         element.style.color = "#777";
     }
 }
-// function addTask() {
-//     let inputText = document.getElementById("task-input").value;
-//     let tasks = document.querySelector(".my-tasks");
-//     let actualTask = document.createElement("span");
 
-//     actualTask.innerText = inputText;
-//     tasks.appendChild(actualTask);
-// } 
+function addTask(task) {
+    let tasks = document.querySelector(".my-tasks");
+    let actualTask = document.createElement("span");
+
+    actualTask.innerText = task;
+    tasks.appendChild(actualTask);
+} 
 
 let btnHolidays = document.getElementById("btn-holidays");
 let btnAdd = document.getElementById("btn-add");
@@ -119,4 +119,3 @@ createDaysOfTheWeek();
 createDaysOfTheMonth();
 btnHolidays.addEventListener("click", holidayShow);
 btnFridays.addEventListener("click", fridayShow);
-// btnAdd.addEventListener("click", addTask);
