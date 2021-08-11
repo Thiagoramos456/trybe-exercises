@@ -1,3 +1,6 @@
+let btnHolidays = document.getElementById("btn-holidays")
+let toggleHoliday = false;
+
 function createDaysOfTheWeek() {
   const weekDays = [
     "Domingo",
@@ -41,6 +44,20 @@ function createDaysOfTheMonth() {
   }
 }
 
+function holidayShow() {
+    let holidays = document.getElementsByClassName("holiday");
+    
+    for (holiday of holidays){
+        if (toggleHoliday === false){
+            holiday.style.backgroundColor = "#FFAEAA";
+        } else{
+            holiday.style.backgroundColor = "rgb(238,238,238)"
+        }
+    }
+    toggleHoliday = !toggleHoliday;
+}
+
 createDaysOfTheWeek();
 createDaysOfTheMonth();
+btnHolidays.addEventListener("click", holidayShow);
 // Escreva seu código abaixo.
