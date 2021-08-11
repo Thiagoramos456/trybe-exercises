@@ -1,7 +1,3 @@
-let btnHolidays = document.getElementById("btn-holidays");
-let toggleHoliday = false;
-let toggleFriday = false;
-
 function createDaysOfTheWeek() {
   const weekDays = [
     "Domingo",
@@ -38,8 +34,10 @@ function createDaysOfTheMonth() {
       if (day == 24 || day == 25 || day == 31){
         listItem.classList.add("holiday");
       }
-      else if (day == 4 || day == 11 || day == 18 || day == 25){
+      if (day == 4 || day == 11 || day == 18 || day == 25){
+        console.log(day);
         listItem.classList.add("friday");
+        listItem.value = day;
       }
       days.appendChild(listItem);
   }
@@ -66,8 +64,31 @@ function addFridayButton(name) {
     div.appendChild(button);
 }
 
+function fridayShow() {
+    let fridays = document.getElementsByClassName("friday");
+    
+    for (friday of fridays){
+        if (!toggleFriday){
+            friday.innerText = "Sexta-Feira";
+        }
+        else{
+            friday.innerText = friday.value;
+        }
+    }
+
+    toggleFriday = !toggleFriday;
+
+}
+
+let btnHolidays = document.getElementById("btn-holidays");
+let toggleHoliday = false;
+let toggleFriday = false;
+
 addFridayButton("Sexta-Feira");
+
+let btnFridays = document.getElementById("btn-friday");
+
 createDaysOfTheWeek();
 createDaysOfTheMonth();
 btnHolidays.addEventListener("click", holidayShow);
-// Escreva seu código abaixo.
+btnFridays.addEventListener("click", fridayShow);
