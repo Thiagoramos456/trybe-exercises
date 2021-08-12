@@ -34,3 +34,31 @@ header h2 {
     margin: 0 auto;
     cursor: pointer;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #37373D;
+    color: aliceblue;
+}
+
+.selection {
+    display: flex;
+    margin: 0 40px;
+}
+
+.selection input{
+    margin: 0 15px;
+    width: 50px;
+}
+
+.selection select{
+    margin: 0 10px;
+    width: 200px;
+}
+
