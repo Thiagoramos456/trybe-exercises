@@ -101,16 +101,30 @@ function zoomOut(event) {
 function addTask(task) {
     let tasks = document.querySelector(".my-tasks");
     let actualTask = document.createElement("span");
-
+    actualTask.classList.add("task");
+    actualTask.addEventListener("click", selectTask);
     actualTask.innerText = task;
     tasks.appendChild(actualTask);
+    addSubtitle("lightblue");
 }
 
-function addSubtitle (color) {
+function addSubtitle(color) {
     let tasks = document.querySelector(".my-tasks");
     let div = document.createElement("div");
-    div.style.color = color;
+    div.style.backgroundColor = color;
     tasks.appendChild(div);
+}
+
+function selectTask(event){
+    let element = event.target;
+    if (element.classList.contains("task")){
+        if (!element.classList.contains("selected")){
+            element.classList.add("selected");
+        }
+        else{
+            element.classList.remove("selected");
+        }
+    }
 }
 
 let btnHolidays = document.getElementById("btn-holidays");
