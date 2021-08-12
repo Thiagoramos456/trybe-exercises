@@ -104,7 +104,14 @@ function addTask(task) {
 
     actualTask.innerText = task;
     tasks.appendChild(actualTask);
-} 
+}
+
+function addSubtitle (color) {
+    let tasks = document.querySelector(".my-tasks");
+    let div = document.createElement("div");
+    div.style.color = color;
+    tasks.appendChild(div);
+}
 
 let btnHolidays = document.getElementById("btn-holidays");
 let btnAdd = document.getElementById("btn-add");
