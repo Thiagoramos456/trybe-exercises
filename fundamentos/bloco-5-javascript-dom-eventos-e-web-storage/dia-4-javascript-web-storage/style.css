@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'monospace', sans-serif;
+    font-family: 'Monospace', sans-serif;
 }
 
 header {
@@ -15,6 +15,10 @@ header {
 
 header h2 {
     margin-top: 20px;
+}
+
+main {
+    margin-bottom: 100px;
 }
 
 #plain-text {
@@ -49,6 +53,7 @@ footer {
 
 .selection {
     display: flex;
+    align-items: center;
     margin: 0 40px;
 }
 
@@ -56,6 +61,7 @@ footer {
     margin: 0 15px;
     width: 50px;
     border-radius: 10px;
+    padding: 5px 4px;
 }
 
 .selection select {
@@ -67,6 +73,6 @@ footer {
 .read-area {
     display: block;
     margin: 50px auto;
-    width: 60%;
+    width: 70%;
     text-align: justify;
 }
