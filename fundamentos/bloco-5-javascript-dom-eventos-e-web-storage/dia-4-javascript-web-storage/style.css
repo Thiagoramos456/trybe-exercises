@@ -17,7 +17,7 @@ header h2 {
     margin-top: 20px;
 }
 
-#plainText {
+#plain-text {
     display: block;
     width: 60%;
     height: 50%;
@@ -52,13 +52,22 @@ footer {
     margin: 0 40px;
 }
 
-.selection input{
+.selection input {
     margin: 0 15px;
     width: 50px;
+    border-radius: 10px;
 }
 
-.selection select{
+.selection select {
     margin: 0 10px;
     width: 200px;
+    border-radius: 10px;
 }
 
+.read-area {
+    display: block;
+    margin: 50px auto;
+    width: 60%;
+    text-align: justify;
+    font-size: 25px;
+}
