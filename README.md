@@ -56,9 +56,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 :ballot_box_with_check: 5-2: _JavaScript - Trabalhando com elementos_
 
-:black_large_square: 5-3: _JavaScript - Eventos_
+:ballot_box_with_check: 5-3: _JavaScript - Eventos_
 
-:black_large_square:  5-4: _JavaScript - Web Storage_
+:ballot_box_with_check:  5-4: _JavaScript - Web Storage_
 
 :black_large_square: 5.5: _Projeto: Arte com Pixels_
 
@@ -497,9 +497,9 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check: 5-2: _JavaScript - Working with elements_
 
-:black_large_square: 5-3: _JavaScript - Events_
+:ballot_box_with_check: 5-3: _JavaScript - Events_
 
-:black_large_square:  5-4: _JavaScript - Web Storage_
+:ballot_box_with_check:  5-4: _JavaScript - Web Storage_
 
 :black_large_square: 5.5: _Project: Art with Pixels_
 
