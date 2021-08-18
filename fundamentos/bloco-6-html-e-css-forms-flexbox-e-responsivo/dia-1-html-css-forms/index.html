@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <label for="nome">Nome<input id="nome" name="nome" type="text" maxlength="40" required></label>
+            <label for="email">Email<input id="email" name="email" type="text" maxlength="50" required></label>
+            <label for="cpf">CPF<input id="cpf" name="cpf" type="text" minlength="11" maxlength="11" required></label>
+            <label for="endereco">Endereço<input id="endereco" name="endereco" type="text" maxlength="200" required></label>
+            <label for="cidade">Cidade<input id="cidade" name="cidade" type="text" maxlength="28" required></label>
+            <label for="estado">Estado
+                <select id="estado" name="estado" required></select>
+            </label>
+            <label for="casa"><input type="radio" value="Casa" name="tipo" id="casa" required>Casa</label>
+            <label for="apartamento"><input type="radio" value="apartamento" name="tipo" id="apartamento" required>Apartamento</label>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
