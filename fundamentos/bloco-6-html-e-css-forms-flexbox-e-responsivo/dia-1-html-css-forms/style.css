@@ -12,6 +12,7 @@ fieldset {
     margin: 0 auto;
     border-radius: 5px;
     border: 2px solid green;
+    padding: 25px;
 }
 
 fieldset select {
@@ -24,14 +25,15 @@ fieldset label {
     display: block;
     padding: 10px;
     width: fit-content;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 fieldset label input:not([type="radio"]) {
     display: block;
-    font-size: 25px;
+    font-size: 20px;
     width: 800px;
     margin: 15px 0;
+    padding: 5px;
 }
 
 fieldset label input[type="radio"] {
@@ -39,7 +41,7 @@ fieldset label input[type="radio"] {
 }   
 
 .checkbox{
-    font-size: 23px;
+    font-size: 15px;
 }
 
 .checkbox input {
