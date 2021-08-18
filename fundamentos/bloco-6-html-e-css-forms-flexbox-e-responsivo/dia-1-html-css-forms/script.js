@@ -1,4 +1,5 @@
 const inputEstado = document.getElementById("estado");
+const date = document.getElementById("data-inicio");
 
 function createOptionState(name, initials) {
   const option = document.createElement("option");
@@ -40,9 +41,35 @@ function loadStates() {
   ];
 
   for (let index = 0; index < states.length; index += 1) {
-    const stateElement = createOptionState(states[index].nome, states[index].sigla);
+    const stateElement = createOptionState(
+      states[index].nome,
+      states[index].sigla
+    );
     inputEstado.appendChild(stateElement);
   }
 }
 
-window.onload = loadStates;
+function checkDate() {
+  const dateInfo = date.value.split("/");
+  const day = dateInfo[0];
+  const month = dateInfo[1];
+  const year = dateInfo[2];
+
+  if (dateInfo.length !== 3) {
+    alert("Data com formato errado (dd/mm/yyyy).");
+  }
+
+  if (day < 1 && day > 31) {
+    alert("Dia inválido. Deve ser entre 1 e 31.");
+  }
+
+  if (year < 1 && year > 12) {
+    alert("Mês inválido. Deve ser entre 1 e 12.");
+  }
+}
+
+function init() {
+  loadStates();
+}
+
+window.onload = init;
