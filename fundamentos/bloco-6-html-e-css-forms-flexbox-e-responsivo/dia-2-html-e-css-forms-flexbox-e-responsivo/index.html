@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="DatePickerX/dist/css/DatePickerX.min.css">
+    <script src="DatePickerX/dist/js/DatePickerX.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    <title>Form</title>
+</head>
+<body>
+    <div class="container text-center pt-4 pb-4 mb-2 bg-info rounded">
+        <h1>Preencha o formulário</h1>
+    </div>
+    <form class="needs-validation" action="" method="GET" novalidate>
+    <div class="container border border-2 rounded p-4 form-group mb-3">
+        <h2 class="mb-4">Informações pessoais</h2>
+        <fieldset>
+            <div class="form-group mb-4">
+                <label class="form-label lead lead" for="nome">Nome</label>
+                <input class="form-control" id="nome" minlength="2" name="nome" type="text" maxlength="40" placeholder="Insira seu nome aqui..." required>
+            </div>
+            <div class="form-group mb-4">
+                <label class="form-label lead" for="email">Email</label>
+                <input class="form-control" id="email" name="email" type="text" maxlength="50" placeholder="Insira seu email..." required>
+            </div> 
+            <div class="form-group mb-4">
+                <label class="form-label lead" for="cpf">CPF</label>
+                <input class="form-control" id="cpf" name="cpf" type="text" minlength="11" maxlength="11" placeholder="Insira seu CPF..." required>
+            </div>
+            <div class="form-group mb-4">
+                <label class="form-label lead" for="endereco">Endereço</label>
+                <input class="form-control" id="endereco" name="endereco" type="text" maxlength="200" placeholder="Informe seu CPF..." required>
+            </div>
+            <div class="form-group mb-4">
+                <label class="form-label lead" for="cidade">Cidade</label>
+                <input class="form-control" id="cidade" name="cidade" type="text" maxlength="28" placeholder="Digite o nome de sua cidade" required>
+            </div>
+            <div class="form-group mb-4">
+                <label class="form-label lead" for="estado">Estado</label>
+                <select class="form-select" id="estado" name="estado" required></select>
+            </div>
+            <div>
+                <label class="form-label lead mb-4">Moradia: </label>
+
+                <div class="form-check mb-3">
+                    <input class="btn-check" type="radio" value="Casa" name="tipo" id="casa" required>
+                    <label class="btn btn-outline-primary" for="casa">Casa</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="btn-check" type="radio" value="Apartamento" name="tipo" id="apartamento" required>
+                    <label class="btn btn-outline-primary" for="apartamento">Apartamento</label>
+                </div>
+            </div>
+            
+        </fieldset>
+    </div>
+    <div class="container border border-2 rounded p-4 form-group mb-4">
+        <h2 class="mb-4">Informações de trabalho</h2>
+        <fieldset>
+            <div class="form-group mb-4">
+                <label class="form-label lead" for="resumo-curriculo">Resumo do seu currículo</label>
+                <textarea class="form-control" id="resumo-curriculo" name="resumo-curriculo" rows="6" maxlength="1000" required></textarea>
+            </div>
+            <div class="form-group mb-4">
+                <label class="form-label lead" for="cargo">Cargo</label>
+                <input class="form-control" id="cargo" name="cargo" type="text" maxlength="40" placeholder="Insira seu cargo aqui..." required>
+            </div>
+            <div class="form-group mb-4">
+                <label class="form-label lead" for="descricao-cargo">Descrição do cargo</label>
+                <textarea class="form-control" id="descricao-cargo" name="descricao-cargo" rows="5" maxlength="500" required></textarea>
+            </div>
+            <div class="form-group mb-4">
+                <label class="form-label lead" for="data-inicio">Data de Início</label>
+                <input class="form-control" placeholder="dd/mm/yyyy" id="data-inicio" name="data-inicio" type="text">
+            </div>
+
+            <button class="btn btn-success" id="btn-submit" type="submit">Enviar</button>
+        </fieldset>
+    </div>
+
+    </form>
+    <!-- <div class="display-info">
+        <label for="nome-display">Nome: </label>
+        <p id="nome-display"></p>
+        <label for="email-display">Email: </label>
+        <p id="email-display"></p>
+        <label for="cpf-display">CPF: </label>
+        <p id="cpf-display"></p>
+        <label for="endereco-display">Endereço: </label>
+        <p id="endereco-display"></p>
+        <label for="cidade-display">Cidade: </label>
+        <p id="cidade-display"></p>
+        <label for="estado-display">Estado: </label>
+        <p id="estado-display"></p>
+    </div> -->
+    </body>
+    <script src="script.js"></script>
+</body>
+</html>
