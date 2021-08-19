@@ -19,16 +19,30 @@
             </label>
             <p class="checkbox-title">Moradia: </p>
             <label class="checkbox" for="casa"><input type="radio" value="Casa" name="tipo" id="casa" required>Casa</label>
-            <label class="checkbox" for="apartamento"><input type="radio" value="apartamento" name="tipo" id="apartamento" required>Apartamento</label>
+            <label class="checkbox" for="apartamento"><input type="radio" value="Apartamento" name="tipo" id="apartamento" required>Apartamento</label>
         </fieldset>
         <fieldset>
             <label for="resumo-curriculo">Resumo do seu currículo<textarea id="resumo-curriculo" name="resumo-curriculo" rows="10" maxlength="1000" required></textarea></label>
             <label for="cargo">Cargo<input id="cargo" name="cargo" type="text" maxlength="40" placeholder="Insira seu cargo aqui..." required></label>
             <label for="descricao-cargo">Descrição do cargo<textarea id="descricao-cargo" name="descricao-cargo" rows="5" maxlength="500" required></textarea></label>
-            <label for="data-inicio">Data de Início<input id="data-inicio" name="data-inicio" type="text"></label>
+            <label for="data-inicio">Data de Início<input placeholder="dd/mm/yyyy" id="data-inicio" name="data-inicio" type="text"></label>
             <button id="btn-submit" type="submit">Enviar</button>
         </fieldset>
     </form>
+    <div class="display-info">
+        <label for="nome-display">Nome: </label>
+        <p id="nome-display"></p>
+        <label for="email-display">Email: </label>
+        <p id="email-display"></p>
+        <label for="cpf-display">CPF: </label>
+        <p id="cpf-display"></p>
+        <label for="endereco-display">Endereço: </label>
+        <p id="endereco-display"></p>
+        <label for="cidade-display">Cidade: </label>
+        <p id="cidade-display"></p>
+        <label for="estado-display">Estado: </label>
+        <p id="estado-display"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

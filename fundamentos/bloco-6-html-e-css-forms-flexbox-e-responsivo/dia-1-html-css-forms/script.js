@@ -1,5 +1,7 @@
 const inputEstado = document.getElementById("estado");
 const date = document.getElementById("data-inicio");
+const btnSubmit = document.getElementById("btn-submit");
+const displayInfo = document.querySelector(".display-info");
 
 function createOptionState(name, initials) {
   const option = document.createElement("option");
@@ -49,27 +51,84 @@ function loadStates() {
   }
 }
 
-function checkDate() {
+function checkDate(event) {
   const dateInfo = date.value.split("/");
-  const day = dateInfo[0];
-  const month = dateInfo[1];
-  const year = dateInfo[2];
+  let isValid = true;
+  let day = dateInfo[0];
+  let month = dateInfo[1];
+  let year = dateInfo[2];
 
-  if (dateInfo.length !== 3) {
+  if (
+    dateInfo.length !== 3 ||
+    day.length !== 2 ||
+    month.length !== 2 ||
+    year.length !== 4
+  ) {
     alert("Data com formato errado (dd/mm/yyyy).");
+    isValid = false;
   }
 
-  if (day < 1 && day > 31) {
+  day = parseInt(day);
+  month = parseInt(month);
+  year = parseInt(year);
+
+  if (day < 1 || day > 31) {
     alert("Dia inválido. Deve ser entre 1 e 31.");
+    isValid = false;
   }
 
-  if (year < 1 && year > 12) {
+  if (month < 1 || month > 12) {
     alert("Mês inválido. Deve ser entre 1 e 12.");
+    isValid = false;
+  }
+
+  if (year < 0) {
+    alert("O ano não pode ser negativo.");
+    isValid = false;
+  }
+
+  return isValid;
+}
+
+function loadDisplay() {
+    const nomeValue = document.getElementById('nome').value;
+    const emailValue = document.getElementById('email').value;
+    const cpfValue = document.getElementById('cpf').value;
+    const enderecoValue = document.getElementById('endereco').value;
+    const cidadeValue = document.getElementById('cidade').value;
+    const estadoValue = document.getElementById('estado').value;
+
+    const nomeDisplay = document.getElementById("nome-display");
+    const emailDisplay = document.getElementById("email-display");
+    const cpfDisplay = document.getElementById("cpf-display");
+    const enderecoDisplay = document.getElementById("endereco-display");
+    const cidadeDisplay = document.getElementById("cidade-display");
+    const estadoDisplay = document.getElementById("estado-display");
+
+
+    nomeDisplay.innerText = nomeValue;
+    emailDisplay.innerText = emailValue;
+    cpfDisplay.innerText = cpfValue;
+    enderecoDisplay.innerText = enderecoValue;
+    cidadeDisplay.innerText = cidadeValue;
+    estadoDisplay.innerText = estadoValue;
+
+    displayInfo.style.display = "block";
+    window.scrollTo(0, document.body.scrollHeight)
+
+}
+
+function sendForm(event) {
+  event.preventDefault();
+  if(checkDate()) {
+    loadDisplay();
   }
 }
 
 function init() {
   loadStates();
+
+  btnSubmit.addEventListener("click", sendForm);
 }
 
 window.onload = init;

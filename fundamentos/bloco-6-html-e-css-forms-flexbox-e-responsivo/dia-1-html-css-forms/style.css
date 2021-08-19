@@ -66,6 +66,7 @@ fieldset textarea {
 }
 
 button {
+    cursor: pointer;
     display: block;
     margin: 0 auto;
     font-size: 16px;
@@ -74,10 +75,26 @@ button {
     border: 0;
     background-color: darkgreen;
     color: azure;
-    cursor: pointer;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 button:hover {
     background-color: rgba(100, 161, 8, 0.938);
+}
+
+.display-info {
+    display: none;
+    border: 1px solid green;
+    width: 50%;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.display-info label {
+    margin: 20px;
+    font-weight: 600;
+}
+
+.display-info p {
+    margin: 30px;
 }
