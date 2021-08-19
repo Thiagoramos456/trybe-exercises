@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+fieldset {
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 5px;
+    border: 2px solid green;
+    padding: 25px;
+}
+
+fieldset select {
+    display: block;
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+fieldset label {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+}
+
+fieldset label input:not([type="radio"]) {
+    font-size: 20px;
+    width: 100%;
+    margin: 15px 0;
+    padding: 5px;
+}
+
+fieldset label input[type="radio"] {
+    font-size: 50px;
+}   
+
+fieldset textarea {
+    margin-top: 15px;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.checkbox{
+    font-size: 15px;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.checkbox-title {
+    font-size: 26px;
+    margin: 10px 15px;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 5px 30px;
+    border-radius: 2px;
+    border: 0;
+    background-color: darkgreen;
+    color: azure;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: rgba(100, 161, 8, 0.938);
+}
+
+.display-info {
+    display: none;
+    border: 1px solid green;
+    width: 50%;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.display-info label {
+    margin: 20px;
+    font-weight: 600;
+}
+
+.display-info p {
+    margin: 30px;
+}
