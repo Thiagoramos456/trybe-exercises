@@ -60,20 +60,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 :ballot_box_with_check:  5-4: _JavaScript - Web Storage_
 
-:black_large_square: 5.5: _Projeto: Arte com Pixels_
+:ballot_box_with_check: 5.5: _Projeto: Arte com Pixels_
 
-:black_large_square: 5-6: _Projeto - Lista de tarefas_
+:ballot_box_with_check: 5-6: _Projeto - Lista de tarefas_
 
-:black_large_square: 5-7: _Projeto Bônus - Meme Generator_
+:ballot_box_with_check: 5-7: _Projeto Bônus - Meme Generator_
 
-:black_large_square: 5-7: _Projeto Bônus - Adivinhe a cor_
+:ballot_box_with_check: 5-7: _Projeto Bônus - Adivinhe a cor_
 
-:black_large_square: 5-7: _Projeto Bônus - Carta Misteriosa_
+:ballot_box_with_check: 5-7: _Projeto Bônus - Carta Misteriosa_
 
 
 ### Bloco 6: HTML & CSS avançado
 
-:black_large_square: 6-1: _HTML & CSS - Forms_
+:ballot_box_with_check: 6-1: _HTML & CSS - Forms_
 
 :black_large_square: 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 
@@ -501,20 +501,20 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check:  5-4: _JavaScript - Web Storage_
 
-:black_large_square: 5.5: _Project: Art with Pixels_
+:ballot_box_with_check: 5.5: _Project: Art with Pixels_
 
-:black_large_square: 5-6: _Project - To Do List_
+:ballot_box_with_check: 5-6: _Project - To Do List_
 
-:black_large_square: 5-7: _Bonus Project - Meme Generator_
+:ballot_box_with_check: 5-7: _Bonus Project - Meme Generator_
 
-:black_large_square: 5-7: _Bonus Project - Guess the Colour_
+:ballot_box_with_check: 5-7: _Bonus Project - Guess the Colour_
 
-:black_large_square: 5-7: _Bonus Project - Mysterious Card_
+:ballot_box_with_check: 5-7: _Bonus Project - Mysterious Card_
 
 
 ### Part 6: HTML & CSS avançado
 
-:black_large_square: 6-1: _HTML & CSS - Forms_
+:ballot_box_with_check: 6-1: _HTML & CSS - Forms_
 
 :black_large_square: 6-2: _JavaScript libraries and CSS Frameworks_
 
