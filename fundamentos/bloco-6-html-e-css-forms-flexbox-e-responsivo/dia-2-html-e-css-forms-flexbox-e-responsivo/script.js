@@ -51,45 +51,6 @@ function loadStates() {
   }
 }
 
-function checkDate(event) {
-  const dateInfo = date.value.split("/");
-  let isValid = true;
-  let day = dateInfo[0];
-  let month = dateInfo[1];
-  let year = dateInfo[2];
-
-  if (
-    dateInfo.length !== 3 ||
-    day.length !== 2 ||
-    month.length !== 2 ||
-    year.length !== 4
-  ) {
-    alert("Data com formato errado (dd/mm/yyyy).");
-    isValid = false;
-  }
-
-  day = parseInt(day);
-  month = parseInt(month);
-  year = parseInt(year);
-
-  if (day < 1 || day > 31) {
-    alert("Dia inválido. Deve ser entre 1 e 31.");
-    isValid = false;
-  }
-
-  if (month < 1 || month > 12) {
-    alert("Mês inválido. Deve ser entre 1 e 12.");
-    isValid = false;
-  }
-
-  if (year < 0) {
-    alert("O ano não pode ser negativo.");
-    isValid = false;
-  }
-
-  return isValid;
-}
-
 function loadDisplay() {
     const nomeValue = document.getElementById('nome').value;
     const emailValue = document.getElementById('email').value;
@@ -129,6 +90,10 @@ function init() {
   loadStates();
 
   btnSubmit.addEventListener("click", sendForm);
+  date.DatePickerX.init({
+    format: "dd/mm/yyyy",
+    maxDate: new Date()
+  });
 }
 
 window.onload = init;
