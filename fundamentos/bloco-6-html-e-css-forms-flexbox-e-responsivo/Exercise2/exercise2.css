@@ -17,13 +17,32 @@ html {
   color: rgb(240, 247, 255);
 }
 
-@media screen and (max-width: 700px) {
+.aside-one {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.aside-one h2{
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color:rgb(230, 255, 230)
+
+}
+
+.aside-one ul li {
+  margin: 10px 0;
+}
+
+/* Dispositivos pequenos */
+
+@media screen and (max-width: 600px) {
   .container header nav ul {
     display: none;
   }
   .container header {
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
     padding: 30px 15px;
     text-decoration: underline;
   }
