@@ -38,7 +38,7 @@ figure {
 
 @media (min-width:1050px) {
     body {
-        background-color:darkgrey;
+        background-color:aqua;
         font-size: 30px;
         margin: 50px 50px;
         max-width: 1400px;
@@ -51,5 +51,9 @@ figure {
 
     h1 {
         font-size: 50px;
+    }
+
+    figure {
+        width: 40%
     }
 }
