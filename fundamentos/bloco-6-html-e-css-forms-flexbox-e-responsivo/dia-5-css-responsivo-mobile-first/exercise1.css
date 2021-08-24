@@ -28,10 +28,28 @@ figure {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
     
     figure {
         display: inline-block;
+    }
+}
+
+@media (min-width:1050px) {
+    body {
+        background-color:darkgrey;
+        font-size: 30px;
+        margin: 50px 50px;
+        max-width: 1400px;
+    }
+
+    p {
+        text-align:justify;
+
+    }
+
+    h1 {
+        font-size: 50px;
     }
 }
