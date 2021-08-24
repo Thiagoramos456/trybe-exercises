@@ -55,6 +55,8 @@ html {
 
 .main-content p {
   text-indent: 5%;
+  text-align: justify;
+
 }
 
 footer p {
@@ -78,7 +80,7 @@ footer p {
   }
 
   .container header p {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .container header ul li {
@@ -86,6 +88,65 @@ footer p {
     list-style: none;
     font-size: 19px;
   }
+
+  .aside-one h2 {
+    font-size: 28px;
+  }
+
+  .aside-one ul li{
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  .aside-one {
+    margin-bottom: 1rem !important;
+  }
+
+  .aside-two {
+    padding: 20px 150px;
+    margin-top: 45px;
+    margin-bottom: 1rem
+  }
+
+  .aside-two h2 {
+    margin: 20px 0;
+    font-size:  26px;
+  }
+
+  .aside-two ul li {
+    margin: 10px 0;
+    font-size:  18px;
+  }
+
+  .main-content h1{
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 1rem !important;
+  }
+
+  .main-content p {
+    font-size:  20px;
+    margin:  30px 20%;
+    line-height:  30px;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+
+  footer h3 {
+    font-size: 24px;
+    margin-top: 50px !important;
+    margin-bottom: 1rem;
+  }
+
+  footer p {
+    margin: 5px 20%;
+    line-height:  25px;
+    font-size: 16px;
+    text-align:center;
+  }
+
 }
 
 /* Dispositivos pequenos */
@@ -132,8 +193,7 @@ footer p {
   .main-content p {
     font-size:  20px;
     margin: 30px 15px;
-    line-height:  17px;
-    text-align: justify;
+    line-height:  25px;
   }
 
   footer h3 {
