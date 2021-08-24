@@ -49,6 +49,9 @@ html {
   list-style: none;
 }
 
+.main-content h1 {
+  text-align: center;
+}
 
 /* Dispositivos pequenos */
 
@@ -79,6 +82,19 @@ html {
   .aside-two ul li {
     margin: 10px 0;
     font-size:  17px;
+  }
+
+  .main-content h1{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 1rem !important;
+  }
+
+  .main-content p {
+    font-size: 15px;
+    margin: 30px 15px;
+    line-height:  17px;
+    text-align: justify;
   }
 
 }
