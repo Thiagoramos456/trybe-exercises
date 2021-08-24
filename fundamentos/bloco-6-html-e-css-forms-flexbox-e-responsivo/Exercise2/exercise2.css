@@ -34,14 +34,14 @@ html {
   margin: 10px 0;
 }
 
-.aside-two {
+.aside-two, footer {
   display: flex;
   flex-flow: column;
   align-items: center;
   background-color: rgb(3, 38, 61);
   color: rgb(240, 247, 255);
   width: fit-content;
-  margin: 30px auto;
+  margin: auto;
   padding: 20px;
 }
 
@@ -49,8 +49,12 @@ html {
   list-style: none;
 }
 
-.main-content h1 {
+.main-content h1, footer h3 {
   text-align: center;
+}
+
+footer p {
+  text-align: justify;
 }
 
 /* Dispositivos pequenos */
@@ -91,10 +95,23 @@ html {
   }
 
   .main-content p {
-    font-size: 15px;
+    font-size:  15px;
     margin: 30px 15px;
     line-height:  17px;
     text-align: justify;
   }
+
+  footer h3 {
+    font-size: 20px;
+    margin-top: 50px !important;
+    margin-bottom: 1rem;
+    margin-left: 1rem !important;
+  }
+
+  footer p {
+    margin: 10px;
+    font-size: 16px;
+  }
+
 
 }
