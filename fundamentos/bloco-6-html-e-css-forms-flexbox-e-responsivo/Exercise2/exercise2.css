@@ -59,7 +59,7 @@ footer p {
 
 /* Dispositivos pequenos */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .container header nav ul {
     display: none;
   }
@@ -72,6 +72,10 @@ footer p {
 
   .aside-one h2 {
     font-size: 22px;
+  }
+
+  .aside-one ul {
+    margin: 10px 0;
   }
 
   .aside-one ul li{
@@ -95,7 +99,7 @@ footer p {
   }
 
   .main-content p {
-    font-size:  15px;
+    font-size:  20px;
     margin: 30px 15px;
     line-height:  17px;
     text-align: justify;
