@@ -26,13 +26,29 @@ html {
 .aside-one h2{
   padding: 20px;
   margin-bottom: 10px;
-  background-color:rgb(230, 255, 230)
+  background-color:rgb(230, 255, 230);
 
 }
 
 .aside-one ul li {
   margin: 10px 0;
 }
+
+.aside-two {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: rgb(3, 38, 61);
+  color: rgb(240, 247, 255);
+  width: fit-content;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.aside-two ul li{
+  list-style: none;
+}
+
 
 /* Dispositivos pequenos */
 
@@ -55,4 +71,14 @@ html {
     margin: 10px 0;
     font-size: 17px;
   }
+
+  .aside-two h2 {
+    margin: 20px 0;
+  }
+
+  .aside-two ul li {
+    margin: 10px 0;
+    font-size:  17px;
+  }
+
 }
