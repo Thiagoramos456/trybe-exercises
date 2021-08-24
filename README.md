@@ -77,9 +77,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 :ballot_box_with_check: 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 
-:black_large_square: 6-3: _CSS Flexbox - Part 1_
+:ballot_box_with_check: _CSS Flexbox - Part 1_
 
-:black_large_square: 6-4: _CSS Flexbox - Part 2_
+:ballot_box_with_check: _CSS Flexbox - Part 2_
 
 :black_large_square: 6-5: _CSS Responsivo - Mobile First_
 
@@ -518,9 +518,9 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check: 6-2: _JavaScript libraries and CSS Frameworks_
 
-:black_large_square: 6-3: _CSS Flexbox - Part 1_
+:ballot_box_with_check: 6-3: _CSS Flexbox - Part 1_
 
-:black_large_square: 6-4: _CSS Flexbox - Part 2_
+:ballot_box_with_check: 6-4: _CSS Flexbox - Part 2_
 
 :black_large_square: 6-5: _CSS Responsive - Mobile First_
 
