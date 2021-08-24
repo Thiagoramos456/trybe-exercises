@@ -20,3 +20,18 @@ img {
 figure {
     margin: 0;
 }
+
+@media (min-width: 503px) {
+    body {
+        font-size: 25px;
+        margin: 50px 70px
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    figure {
+        display: inline-block;
+    }
+}
