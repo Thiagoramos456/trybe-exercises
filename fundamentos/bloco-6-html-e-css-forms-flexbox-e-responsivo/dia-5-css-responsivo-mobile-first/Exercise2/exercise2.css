@@ -105,7 +105,8 @@ footer p {
   .aside-two {
     padding: 20px 150px;
     margin-top: 45px;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    border-radius: 10px;
   }
 
   .aside-two h2 {
