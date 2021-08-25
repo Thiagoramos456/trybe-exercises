@@ -81,7 +81,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 :ballot_box_with_check: _CSS Flexbox - Part 2_
 
-:black_large_square: 6-5: _CSS Responsivo - Mobile First_
+:ballot_box_with_check: _CSS Responsivo - Mobile First_
 
 :black_large_square: 6-6: _Projeto - Trybewarts_
 
@@ -522,7 +522,7 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check: 6-4: _CSS Flexbox - Part 2_
 
-:black_large_square: 6-5: _CSS Responsive - Mobile First_
+:ballot_box_with_check: _CSS Responsive - Mobile First_
 
 :black_large_square: 6-6: _Project - Trybewarts_
 
