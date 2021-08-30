@@ -85,22 +85,46 @@ console.log(verifyPair(lesson3, "turno", "noite"));
 console.log(verifyPair(lesson3, "materia", "Maria Clara"));
 // Output: false
 
-
 // -------------------- Bônus --------------------
 
 // 1 - Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
 
 const mathStudents = (lessons) => {
-    let studentsQuantity = 0;
+  let studentsQuantity = 0;
 
-    for (lesson in lessons) {
-        const actualLesson = lessons[lesson];
-        if (actualLesson.materia === "Matemática") {
-            studentsQuantity += actualLesson.numeroEstudantes;
-        }
+  for (lesson in lessons) {
+    const actualLesson = lessons[lesson];
+    if (actualLesson.materia === "Matemática") {
+      studentsQuantity += actualLesson.numeroEstudantes;
     }
+  }
 
-    return studentsQuantity;
-}
+  return studentsQuantity;
+};
 
 console.log(mathStudents(allLessons));
+
+// 2 - Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5:
+
+const createReport = (lessons, teacher) => {
+  let studentsQuantity = 0;
+  let classes = [];
+
+  for (lesson in lessons) {
+    const actualLesson = lessons[lesson];
+    if (actualLesson.professor === teacher) {
+      studentsQuantity += actualLesson.numeroEstudantes;
+      classes.push(actualLesson.materia);
+    }
+  }
+
+  const teacherClassesInfo = {
+      professor: teacher,
+      aulas: classes,
+      studentsQuantity: studentsQuantity
+  }
+
+  return teacherClassesInfo;
+};
+
+console.log(createReport(allLessons, 'Maria Clara'))
