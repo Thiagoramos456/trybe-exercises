@@ -32,5 +32,7 @@ const listKeys = (object) => {
   return keys;
 };
 
-
+const objectLength = (object) => {
+  return Object.keys(lesson2).length;
+};
 
