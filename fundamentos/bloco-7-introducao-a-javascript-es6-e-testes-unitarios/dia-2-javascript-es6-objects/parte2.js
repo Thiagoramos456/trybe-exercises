@@ -24,3 +24,13 @@ const addEntry = (object, key, value) => {
 
 addEntry(lesson2, "turno", "manhã");
 
+const listKeys = (object) => {
+  const keys = [];
+  for (key in object) {
+    keys.push(key);
+  }
+  return keys;
+};
+
+
+
