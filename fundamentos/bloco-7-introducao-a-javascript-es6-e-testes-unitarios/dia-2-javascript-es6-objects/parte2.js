@@ -57,7 +57,6 @@ console.log(allLessons);
 // 6 - Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
 
 const totalStudents = (lessons) => {
-<<<<<<< HEAD
   let studentsQuantity = 0;
   for (lesson in lessons) {
     studentsQuantity += lessons[lesson].numeroEstudantes;
