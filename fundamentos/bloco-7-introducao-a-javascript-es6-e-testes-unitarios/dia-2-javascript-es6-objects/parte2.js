@@ -127,4 +127,4 @@ const createReport = (lessons, teacher) => {
   return teacherClassesInfo;
 };
 
-console.log(createReport(allLessons, 'Maria Clara'))
+console.log(createReport(allLessons, 'Maria Clara'));
