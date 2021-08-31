@@ -1,3 +1,5 @@
+// 4 - Escreva a função findTheNeedle para passar nos testes já implementados.
+
 const assert = require('assert');
 // escreva a função findTheNeedle aqui
 

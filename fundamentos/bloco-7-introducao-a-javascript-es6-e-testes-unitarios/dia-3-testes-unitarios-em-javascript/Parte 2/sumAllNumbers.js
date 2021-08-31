@@ -1,3 +1,5 @@
+// Escreva a função sumAllNumbers para passar nos testes já implementados.
+
 const assert = require('assert');
 // escreva a função sumAllNumbers aqui
 
