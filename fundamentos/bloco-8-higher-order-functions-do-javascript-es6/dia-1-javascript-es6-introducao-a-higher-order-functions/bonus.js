@@ -1,3 +1,6 @@
+//Parte I - Game Actions Simulator
+// Nestes exercícios você irá implementar HOFs que simulam um turno de batalha em um jogo. Você irá criar funções que calculam dano, atualizam status, e ao final, retornam os resultados da rodada.
+
 function dragonDamage(strength) {
   // 1 - Crie uma função que retorna o dano do dragão.
   // O dano será um número aleatório entre 15 (dano mínimo) e o valor do atributo strength (dano máximo).
@@ -60,3 +63,13 @@ const dragon = {
 const battleMembers = { mage, warrior, dragon };
 
 console.log(mage.damage(5));
+
+// Parte II
+// Agora que você já possui a implementação das funções relativas aos três exercícios anteriores, passe-as como parâmetro para outras funções que irão compor um objeto gameActions . O objeto será composto por ações do jogo e cada ação é por denifição uma HOF , pois neste caso, são funções que recebem como parâmetro outra função.
+
+const gameActions = {
+  // Crie as HOFs neste objeto.
+  warriorTurn = function(damage) {
+    dragon.healthPoints -= damage();
+  }
+};
