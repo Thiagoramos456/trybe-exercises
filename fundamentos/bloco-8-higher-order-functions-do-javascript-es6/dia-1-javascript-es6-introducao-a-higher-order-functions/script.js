@@ -22,11 +22,9 @@ const checkDraw = (num1, num2) => num1 === num2;
 
 const draw = (bet, randomFunction) => {
   const randomNumber = Math.floor(Math.random() * (6 - 1) + 1);
-  if (randomFunction(bet, randomNumber)) {
-    return 'Parabéns, você ganhou';
-  } else {
-    return 'Tente novamente';
-  }
+  return randomFunction(bet, randomNumber)
+    ? 'Parabéns, você ganhou'
+    : 'Tente novamente';
 };
 
 console.log(draw(3, checkDraw));
@@ -34,7 +32,7 @@ console.log(draw(3, checkDraw));
 // 3 - Crie uma HOF que receberá três parâmetros. O primeiro será um array de respostas corretas (Gabarito), o segundo será um array de respostas a serem verificadas (respostas da pessoa estudante) e o terceiro é uma função que checa se as respostas estão corretas e faz a contagem da pontuação final recebida pela pessoa estudante. Ao final a HOF deve retornar o total da contagem de respostas certas.
 // Quando a resposta for correta a contagem sobe 1 ponto, quando for incorreta desce 0.5 pontos, e quando não houver resposta ("N.A") não altera-se a contagem.
 
-const RIGHT_ANSWERS =   ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
 const calcScore = (actualAnswer, rightAnswer) => {
@@ -54,7 +52,7 @@ const calcScore = (actualAnswer, rightAnswer) => {
 };
 
 const score = (correctAnswers, answers, checkAnswers) => {
-    return checkAnswers(correctAnswers, answers);
+  return checkAnswers(correctAnswers, answers);
 };
 
 console.log(score(RIGHT_ANSWERS, STUDENT_ANSWERS, calcScore));
