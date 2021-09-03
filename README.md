@@ -101,7 +101,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 :ballot_box_with_check: 8-1: _JavaScript ES6 - Introdução Higher Order Functions_
 
-:black_large_square: 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+:ballot_box_with_check: 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 
 :black_large_square: 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 
@@ -543,7 +543,7 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 
 :ballot_box_with_check: 8-1: _JavaScript ES6 - Introduction to Higher Order Functions_
 
-:black_large_square: 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+:ballot_box_with_check: 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 
 :black_large_square: 8-3: _JavaScript ES6 - Higher Order Functions - map and filter_
 
