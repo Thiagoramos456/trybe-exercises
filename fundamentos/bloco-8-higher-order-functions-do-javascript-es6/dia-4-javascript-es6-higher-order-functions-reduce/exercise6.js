@@ -3,11 +3,20 @@
 const assert = require('assert');
 
 const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
-const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+const grades = [
+  [9, 8, 10, 7, 5],
+  [10, 9, 9, 10, 8],
+  [10, 7, 10, 8, 9],
+];
 
 function studentAverage() {
   // escreva seu código aqui
-  return students.map((student, index) => ({name: student, average: parseFloat((grades[index].reduce((acc, grade) => acc + grade, 0)/grades[index].length).toFixed(1))}));
+  return students.map((student, index) => ({
+    name: student,
+    average:
+      grades[index].reduce((acc, grade) => acc + grade, 0) /
+      grades[index].length,
+  }));
 }
 
 const expected = [
