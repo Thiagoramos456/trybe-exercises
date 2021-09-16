@@ -7,22 +7,30 @@
 
 // Tente usar Higher Order Functions! Lembre-se de que tanto uma quanto a outra recebem, como parâmetro, funções!
 
+// 4 - Quando a Promise for rejeitada, imprima, via console.log , a frase "É mais de oito mil! Essa promise deve estar quebrada!"
+
+// 5 - Quando a Promise for bem-sucedida, encadeie nela uma segunda Promise que some os elementos do array.
+
+
 const generateRandom50 = () => 
   Math.floor(Math.random() * 10000);
 
-const promise = new Promise((resolve, reject) => {
-  const numbers = [];
-  
-  for (let i = 0; i < 10; i += 1) {
-    numbers.push(generateRandom50());
-  }
+const fetchPromise = () => {
 
-  const sum = numbers.reduce((acc, n) => acc + n)
-  console.log(sum)
-  if (sum > 8000) {
-    resolve(sum);
-  } 
-  reject(sum);
-}).then((num) => console.log([2, 3, 5, 10].map((divider) => num / divider)))
-  .catch(() => console.log("Promise rejeitada"));
+  return new Promise((resolve, reject) => {
+    const numbers = [];
+    
+    for (let i = 0; i < 10; i += 1) {
+      numbers.push(generateRandom50());
+    }
 
+    const sum = numbers.reduce((acc, n) => acc + n)
+    if (sum > 8000) {
+      return resolve(sum);
+    } else {
+      return reject(sum);
+    }
+  }).then((num) => [2, 3, 5, 10].map((divider) => num / divider))
+    .then(array => array.reduce((number, acc) => number + acc, 0))
+    .catch(() => console.log("É mais de oito mil! Essa promise deve estar quebrada!"));
+}
