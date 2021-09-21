@@ -12,7 +12,7 @@ describe('Verifica se os resultados estão corretos', () => {
     myRemove([1, 2, 3, 4], 3);
     expect(numbers).toEqual([1, 2, 3, 4]);
   })
-  it('Verifica se remove o número 3 do array quando se passa 3 como parâmetro', () => {
+  it('Verifica nada acontece com o array', () => {
     expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
   });
 });
