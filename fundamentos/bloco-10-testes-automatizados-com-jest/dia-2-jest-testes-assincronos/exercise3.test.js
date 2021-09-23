@@ -32,7 +32,6 @@ describe('Testando busca de usuário', () => {
     expect.assertions(1);
     try {
       const data = await getUserName(3);
-      console.log(data);
     } catch (error) {
       expect(error.message).toMatch('User with 3 not found.');
     }
