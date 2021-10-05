@@ -1,0 +1,19 @@
+.pokemon {
+  display: flex;
+  justify-content:center;
+  border: 1px solid black;
+  width: 250px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
