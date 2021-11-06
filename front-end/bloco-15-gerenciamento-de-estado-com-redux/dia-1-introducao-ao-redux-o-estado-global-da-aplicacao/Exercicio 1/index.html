@@ -57,7 +57,8 @@
             };
           case 'PREVIOUS_COLOR':
             const valueSub = state.index - 1;
-            const previousValue = valueSub === -1 ? state.colors.length - 1 : valueSub;
+            const previousValue =
+              valueSub === -1 ? state.colors.length - 1 : valueSub;
             return {
               ...state,
               index: previousValue,
@@ -69,6 +70,15 @@
 
       const store = Redux.createStore(reducer);
 
+      const btnNextColor = document.getElementById('next');
+      const btnPreviousColor = document.getElementById('previous');
+
+      btnNextColor.addEventListener('click', () => {
+        store.dispatch(nextColor());
+      });
+      btnPreviousColor.addEventListener('click', () => {
+        store.dispatch(previousColor());
+      });
     </script>
   </body>
 </html>
