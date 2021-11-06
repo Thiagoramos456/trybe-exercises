@@ -31,8 +31,35 @@
       <p>Color: <span id="value">white</span></p>
       <button id="previous">Previous color</button>
       <button id="next">Next color</button>
+      <button id="random">Random color</button>
     </div>
     <script>
+      function criarCor() {
+        const oneChar = [
+          '1',
+          '2',
+          '3',
+          '4',
+          '5',
+          '6',
+          '7',
+          '8',
+          '9',
+          'A',
+          'B',
+          'C',
+          'D',
+          'E',
+          'F',
+        ];
+        let cor = '#';
+        const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+        for (let i = 0; i < 6; i += 1) {
+          cor += oneChar[aleatorio()];
+        }
+        return cor;
+      }
+
       const ESTADO_INICIAL = {
         colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
         index: 0,
@@ -44,6 +71,10 @@
 
       const previousColor = () => ({
         type: 'PREVIOUS_COLOR',
+      });
+
+      const randomColor = () => ({
+        type: 'RANDOM_COLOR',
       });
 
       const reducer = (state = ESTADO_INICIAL, action) => {
@@ -63,6 +94,13 @@
               ...state,
               index: previousValue,
             };
+          case 'RANDOM_COLOR':
+            const randomColor = criarCor();
+            return {
+              ...state,
+              colors: [...state.colors, randomColor],
+              index: state.colors.length,
+            };
           default:
             return state;
         }
@@ -72,6 +110,7 @@
 
       const btnNextColor = document.getElementById('next');
       const btnPreviousColor = document.getElementById('previous');
+      const btnRandomColor = document.getElementById('random');
 
       btnNextColor.addEventListener('click', () => {
         store.dispatch(nextColor());
@@ -79,12 +118,16 @@
       btnPreviousColor.addEventListener('click', () => {
         store.dispatch(previousColor());
       });
+      btnRandomColor.addEventListener('click', () => {
+        store.dispatch(randomColor());
+      });
 
       store.subscribe(() => {
-          const colorDisplay = document.getElementById('value');
-          const colorIndex = store.getState().index;
-          const colorValue = store.getState().colors[colorIndex];
-          colorDisplay.innerHTML = colorValue;
+        const colorDisplay = document.getElementById('value');
+        const colorIndex = store.getState().index;
+        const colorValue = store.getState().colors[colorIndex];
+        colorDisplay.innerHTML = colorValue;
+        colorDisplay.style.color = colorValue;
       });
     </script>
   </body>
