@@ -79,6 +79,13 @@
       btnPreviousColor.addEventListener('click', () => {
         store.dispatch(previousColor());
       });
+
+      store.subscribe(() => {
+          const colorDisplay = document.getElementById('value');
+          const colorIndex = store.getState().index;
+          const colorValue = store.getState().colors[colorIndex];
+          colorDisplay.innerHTML = colorValue;
+      });
     </script>
   </body>
 </html>
