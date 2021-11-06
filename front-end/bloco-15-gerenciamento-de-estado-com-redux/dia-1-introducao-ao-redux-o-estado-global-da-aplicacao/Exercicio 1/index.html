@@ -38,14 +38,37 @@
         index: 0,
       };
 
+      const nextColor = () => ({
+        type: 'NEXT_COLOR',
+      });
+
+      const previousColor = () => ({
+        type: 'PREVIOUS_COLOR',
+      });
+
       const reducer = (state = ESTADO_INICIAL, action) => {
         switch (action.type) {
+          case 'NEXT_COLOR':
+            const valueSum = state.index + 1;
+            const nextValue = valueSum === state.colors.length ? 0 : valueSum;
+            return {
+              ...state,
+              index: nextValue,
+            };
+          case 'PREVIOUS_COLOR':
+            const valueSub = state.index - 1;
+            const previousValue = valueSub === -1 ? state.colors.length - 1 : valueSub;
+            return {
+              ...state,
+              index: previousValue,
+            };
           default:
             return state;
         }
       };
 
       const store = Redux.createStore(reducer);
+
     </script>
   </body>
 </html>
